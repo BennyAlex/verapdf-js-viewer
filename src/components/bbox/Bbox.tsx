@@ -49,7 +49,7 @@ interface IBboxDivProps {
   colorScheme?: IColorScheme;
 }
 
-const BboxDiv = styled.div`
+const BboxDiv = styled('div')`
   left: ${(props: IBboxDivProps) => props.left};
   bottom: ${(props: IBboxDivProps) => props.bottom};
   height: ${(props: IBboxDivProps) => props.height};

@@ -34,7 +34,7 @@ interface IStyledPdfPageProps {
 
 const bboxBorderHover = 'orangered';
 
-const StyledPdfPage = styled.div`
+const StyledPdfPage = styled('div')`
   min-height: ${(props: IStyledPdfPageProps) => props.height ? props.height*props.scale + 'px' : 'auto'};
   min-width: ${(props: IStyledPdfPageProps) => props.width ? props.width*props.scale + 'px' : 'auto'};
   &.pdf-page_selected {
